@@ -1,55 +1,45 @@
-<p align="center">
+<img width="1011" height="719" alt="Screenshot 2026-02-21 082638" src="https://github.com/user-attachments/assets/8f9b5f26-1746-4221-96a5-423ee7cbd4b6" /><img width="1011" height="719" alt="Screenshot 2026-02-21 082638" src="https://github.com/user-attachments/assets/daf6d138-8869-4137-af95-783f173d0dfa" /><p align="center">
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
-
 # [trustlens] 🎯
-
 ## Basic Details
-
 ### Team Name: [ANP]
-
 ### Team Members
 - Member 1: [Nandhana vinod] - [College of engineering kalloopara]
 - Member 2: [Parvathy sreekumar] - [College of engineering kalloopara]
-
 ### Hosted Project Link
-[mention your project hosted link here]
-
+[http://localhost:5174/](https://www.google.com/search?q=http://localhost:5174/)
 ### Project Description
-[2-3 lines about what your project does]
-
+An advanced web-based utility designed to identify whether an image is AI-generated, modified, or authentic. By leveraging the Gemini Flash 2.5 API, the tool analyzes visual patterns to provide a clear verdict, confidence level, and detailed reasoning.
 ### The Problem statement
-[What problem are you solving?]
-
+The digital landscape is facing a rapid increase in AI-generated images, making it increasingly difficult for users to identify manipulated or fake visuals. This creates a high risk of misinformation and digital fraud across social media and news platforms.
 ### The Solution
-[How are you solving it?]
-
----
-
+We provide a scalable web-based detector that uses Gemini Flash 2.5 to scrutinize image patterns. The system converts user uploads into Base64 format and processes them through the AI to return a specific verdict (AI Generated, AI Modified, or Authentic) to support digital authenticity and trust.
 ## Technical Details
-
 ### Technologies/Components Used
-
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
-
-**For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
-
----
-
+*
+**Languages used:** JavaScript 
+* 
+**Frameworks used:** React 
+* 
+**Libraries used:** Gemini Flash 2.5 API 
+* 
+**Tools used:** Vite (Build Tool), VS Code 
 ## Features
-
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+* 
+**AI Pattern Analysis:** Uses Gemini Flash 2.5 to detect synthetic visual artifacts.
+* 
+**Detailed Verdicts:** Categorizes images as AI Generated, AI Modified, or Authentic.
+* 
+**Confidence Scoring:** Displays a percentage-based confidence level for every analysis.
+
+
+* 
+**Dark-Mode UI:** A clean, modern user interface optimized for professional use.
+
+
 
 ---
 
@@ -58,22 +48,18 @@ List the key features of your project:
 ### For Software:
 
 #### Installation
+
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+npm install
+
 ```
 
 #### Run
+
 ```bash
-[Run commands - e.g., npm start, python app.py]
+npm run dev
+
 ```
-
-### For Hardware:
-
-#### Components Required
-[List all components needed with specifications]
-
-#### Circuit Setup
-[Explain how to set up the circuit]
 
 ---
 
@@ -83,337 +69,105 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](<img width="1636" height="965" alt="Screenshot 2026-02-21 081114" src="https://github.com/user-attachments/assets/2a0e2b47-8a7d-4a33-b660-6ba4cde483b1" />)
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+*The landing page featuring the image upload zone.*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](<img width="1703" height="955" alt="Screenshot 2026-02-21 081531" src="https://github.com/user-attachments/assets/4d55415a-25be-4bfe-bc26-33d8b03e555e" />)
+
+*Analysis in progress showing the Base64 conversion status.*
+
+![Screenshot3](![Uploading Screenshot 2026-02-21 082638.png…])
+)
+
+*Result screen displaying the AI Verdict and Reasoning.*
 
 #### Diagrams
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
-*Explain your system architecture - components, data flow, tech stack interaction*
+*The frontend is built with React and Vite, which communicates with the Gemini Flash 2.5 API. Images are processed locally into Base64 before being sent for cloud analysis.*
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
-*Add caption explaining your workflow*
+1. User uploads image.
 
----
 
-### For Hardware:
+2. Frontend converts image to Base64.
 
-#### Schematic & Circuit
 
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
+3. Data is sent to Gemini Flash 2.5 API.
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
-#### Build Photos
+4. AI analyzes patterns and returns a verdict.
 
-![Team](Add photo of your team here)
 
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ---
 
 ## Additional Documentation
 
-### For Web Projects with Backend:
+### Future Scope
 
-#### API Documentation
+* 
+**Deepfake Detection:** Integrate CNN-based models for enhanced deepfake identification.
 
-**Base URL:** `https://api.yourproject.com`
 
-##### Endpoints
+* 
+**Metadata Analysis:** Analyze EXIF data to check for source authenticity.
 
-**GET /api/endpoint**
-- **Description:** [What it does]
-- **Parameters:**
-  - `param1` (string): [Description]
-  - `param2` (integer): [Description]
-- **Response:**
-```json
-{
-  "status": "success",
-  "data": {}
-}
-```
 
-**POST /api/endpoint**
-- **Description:** [What it does]
-- **Request Body:**
-```json
-{
-  "field1": "value1",
-  "field2": "value2"
-}
-```
-- **Response:**
-```json
-{
-  "status": "success",
-  "message": "Operation completed"
-}
-```
+* 
+**Batch Processing:** Allow users to upload and scan multiple images simultaneously.
 
-[Add more endpoints as needed...]
+
+* 
+**Browser Extension:** Deploy as a tool for real-time verification on social media.
+
+
 
 ---
 
-### For Mobile Apps:
 
-#### App Flow Diagram
 
-![App Flow](docs/app-flow.png)
-*Explain the user flow through your application*
+## AI Tools Used
 
-#### Installation Guide
+**Tool Used:** Gemini Flash 2.5 API
 
-**For Android (APK):**
-1. Download the APK from [Release Link]
-2. Enable "Install from Unknown Sources" in your device settings:
-   - Go to Settings > Security
-   - Enable "Unknown Sources"
-3. Open the downloaded APK file
-4. Follow the installation prompts
-5. Open the app and enjoy!
+**Purpose:** Core analysis engine for image pattern recognition and verdict generation.
 
-**For iOS (IPA) - TestFlight:**
-1. Download TestFlight from the App Store
-2. Open this TestFlight link: [Your TestFlight Link]
-3. Click "Install" or "Accept"
-4. Wait for the app to install
-5. Open the app from your home screen
-
-**Building from Source:**
-```bash
-# For Android
-flutter build apk
-# or
-./gradlew assembleDebug
-
-# For iOS
-flutter build ios
-# or
-xcodebuild -workspace App.xcworkspace -scheme App -configuration Debug
-```
-
----
-
-### For Hardware Projects:
-
-#### Bill of Materials (BOM)
-
-| Component | Quantity | Specifications | Price | Link/Source |
-|-----------|----------|----------------|-------|-------------|
-| Arduino Uno | 1 | ATmega328P, 16MHz | ₹450 | [Link] |
-| LED | 5 | Red, 5mm, 20mA | ₹5 each | [Link] |
-| Resistor | 5 | 220Ω, 1/4W | ₹1 each | [Link] |
-| Breadboard | 1 | 830 points | ₹100 | [Link] |
-| Jumper Wires | 20 | Male-to-Male | ₹50 | [Link] |
-| [Add more...] | | | | |
-
-**Total Estimated Cost:** ₹[Amount]
-
-#### Assembly Instructions
-
-**Step 1: Prepare Components**
-1. Gather all components listed in the BOM
-2. Check component specifications
-3. Prepare your workspace
-![Step 1](images/assembly-step1.jpg)
-*Caption: All components laid out*
-
-**Step 2: Build the Power Supply**
-1. Connect the power rails on the breadboard
-2. Connect Arduino 5V to breadboard positive rail
-3. Connect Arduino GND to breadboard negative rail
-![Step 2](images/assembly-step2.jpg)
-*Caption: Power connections completed*
-
-**Step 3: Add Components**
-1. Place LEDs on breadboard
-2. Connect resistors in series with LEDs
-3. Connect LED cathodes to GND
-4. Connect LED anodes to Arduino digital pins (2-6)
-![Step 3](images/assembly-step3.jpg)
-*Caption: LED circuit assembled*
-
-**Step 4: [Continue for all steps...]**
-
-**Final Assembly:**
-![Final Build](images/final-build.jpg)
-*Caption: Completed project ready for testing*
-
----
-
-### For Scripts/CLI Tools:
-
-#### Command Reference
-
-**Basic Usage:**
-```bash
-python script.py [options] [arguments]
-```
-
-**Available Commands:**
-- `command1 [args]` - Description of what command1 does
-- `command2 [args]` - Description of what command2 does
-- `command3 [args]` - Description of what command3 does
-
-**Options:**
-- `-h, --help` - Show help message and exit
-- `-v, --verbose` - Enable verbose output
-- `-o, --output FILE` - Specify output file path
-- `-c, --config FILE` - Specify configuration file
-- `--version` - Show version information
-
-**Examples:**
-
-```bash
-# Example 1: Basic usage
-python script.py input.txt
-
-# Example 2: With verbose output
-python script.py -v input.txt
-
-# Example 3: Specify output file
-python script.py -o output.txt input.txt
-
-# Example 4: Using configuration
-python script.py -c config.json --verbose input.txt
-```
-
-#### Demo Output
-
-**Example 1: Basic Processing**
-
-**Input:**
-```
-This is a sample input file
-with multiple lines of text
-for demonstration purposes
-```
-
-**Command:**
-```bash
-python script.py sample.txt
-```
-
-**Output:**
-```
-Processing: sample.txt
-Lines processed: 3
-Characters counted: 86
-Status: Success
-Output saved to: output.txt
-```
-
-**Example 2: Advanced Usage**
-
-**Input:**
-```json
-{
-  "name": "test",
-  "value": 123
-}
-```
-
-**Command:**
-```bash
-python script.py -v --format json data.json
-```
-
-**Output:**
-```
-[VERBOSE] Loading configuration...
-[VERBOSE] Parsing JSON input...
-[VERBOSE] Processing data...
-{
-  "status": "success",
-  "processed": true,
-  "result": {
-    "name": "test",
-    "value": 123,
-    "timestamp": "2024-02-07T10:30:00"
-  }
-}
-[VERBOSE] Operation completed in 0.23s
-```
-
----
-
-## Project Demo
-
-### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
-
-*Explain what the video demonstrates - key features, user flow, technical highlights*
-
-### Additional Demos
-[Add any extra demo materials/links - Live site, APK download, online demo, etc.]
-
----
-
-## AI Tools Used (Optional - For Transparency Bonus)
-
-If you used AI tools during development, document them here for transparency:
-
-**Tool Used:** [e.g., GitHub Copilot, v0.dev, Cursor, ChatGPT, Claude]
-
-**Purpose:** [What you used it for]
-- Example: "Generated boilerplate React components"
-- Example: "Debugging assistance for async functions"
-- Example: "Code review and optimization suggestions"
-
-**Key Prompts Used:**
-- "Create a REST API endpoint for user authentication"
-- "Debug this async function that's causing race conditions"
-- "Optimize this database query for better performance"
-
-**Percentage of AI-generated code:** [Approximately X%]
+**Percentage of AI-generated code:** Approximately 10% (API Integration boilerplate).
 
 **Human Contributions:**
-- Architecture design and planning
-- Custom business logic implementation
-- Integration and testing
-- UI/UX design decisions
 
-*Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
+* Full UI/UX design and Frontend development.
+
+
+* Implementation of Base64 conversion logic.
+
+
+* System architecture and API integration workflow.
+
+
 
 ---
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+* 
+**Member 1**: Developed frontend using React + Vite and designed the dark-mode UI.
+
+
+* 
+**Member 2**: Integrated Gemini Flash 2.5 API and implemented Base64 conversion logic.
+
+
 
 ---
 
 ## License
 
-This project is licensed under the [LICENSE_NAME] License - see the [LICENSE](LICENSE) file for details.
-
-**Common License Options:**
-- MIT License (Permissive, widely used)
-- Apache 2.0 (Permissive with patent grant)
-- GPL v3 (Copyleft, requires derivative works to be open source)
+This project is licensed under the MIT License.
 
 ---
 
